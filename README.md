@@ -47,7 +47,7 @@ You can contact directly the authors by their e-mail addresses.
 
 ## Authors and acknowledgment
 
-Guglielmo Cerri (cerriguglielmo@gmail.com), Antonino Aparo(antonino.aparo@univr.it), Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
+Guglielmo Cerri (cerriguglielmo@gmail.com), Antonino Aparo(antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
