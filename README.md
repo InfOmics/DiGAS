@@ -80,10 +80,20 @@ Save all intermediate file in a directory called as `--out` argument (or `digast
 - list of subjects and raw data divided by phenotype;
 - `SnpToGene_RSID.txt`: a tab-separated file where for each genomic region (specified in `--region` argument) is reported the number of SNPs located in that region (i.e. *2*), SNPs coordinates in *chr:position* format (i.e. *10:43156390,10:43206700* ) and SNPs names in rsID format (i.e. *rs7100293,rs10128322*);
 - `SNPS_to_keep.txt`: a list of SNPs located in defined genomic regions;
-- 'DiGASCompleteResults.txt': For each DiGAS significant genomic region reports the generalized allele spectrum with respect to each phenotype category, fold change with respect to two phenotype  categies and the p-value.
+- 'DiGASCompleteResults.txt': For each DiGAS significant genomic region reports the generalized allele spectrum with respect to each phenotype category, fold change with respect to two phenotype categies and the p-value.
 
 #### --out
 Name of the output file. Default `digastmp.txt`.
+For each significant genomic region it shows name of the region, phenotype categories and respective p-values.
+
+```
+Cat1  Cat2  Gene  Pvalue
+ill healthy region1 0.038
+ill unkown region1 0.047
+ill healthy region3 0.038
+ill unkown region4 0.038
+...
+```
 
 
 
