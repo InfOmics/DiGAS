@@ -16,6 +16,15 @@ Thus, the user will need Cython to be installed to correctly build GRAFIMO. Cyth
 
 DiGAS depends on a number of Python packages. To install all the required packages:
 
+```
+pip3 install pandas
+pip3 install numpy
+pip3 install argparse
+pip3 install csv
+pip3 install subprocess
+pip3 install shutil
+pip3 install re
+```
 
 ## Data
 
