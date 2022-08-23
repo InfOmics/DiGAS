@@ -32,10 +32,62 @@ pip3 install re
 ```
 
 ### Usage
-TO DO 
+The script `digas.py` will run the DiGAS workflow.
+```
+python digas.py [-h] --bfile BFILE --region REGION [--iterations [ITERATION]] [--pheno PHENO] [--saveIntermediate] [--out OUT]
+```
+
+BFILE and REGION files are mandatory. 
+
+#### -h
+or `--help` show the help message. 
+
+#### --bfile 
+Path of the PLINK binary files ***witouth extensions*** contained data to be analyzed. `bim`, `bed` and `fam` files are required.
+
+#### --region
+TO DO
+
+#### --iterations
+Number of iterations to calculate p-value. Default 1000.
+
+#### --pheno
+Optional tab-separeted (txt) or comma-separated (csv) input file used to overwrite subjects phenotype from original fam. It accepts either numeric or categorical labels. 
+Only subjects in common between fam and pheno files are included in the analysis. DiGAS command-line tool prints the number of subjects excluded from the analysis.
+
+```
+subject1  1  
+subject2  3
+subject3  1
+subject4  3
+subject5  2
+...
+```
+
+```
+subject1,healty  
+subject2,ill
+subject3,healty
+subject4,ill
+subject5,unknown
+...
+```
+
+#### --saveIntermediate
+Save all intermediate file in a directory called as `--out` argument (or `digastmp` as default): 
+- list of subjects and raw data divided by phenotype;
+- `SnpToGene_RSID.txt`: a tab-separated file where for each genomic region (specified in `--region` argument) is reported the number of SNPs located in that region (i.e. *2*), SNPs coordinates in *chr:position* format (i.e. *10:43156390,10:43206700* ) and SNPs names in rsID format (i.e. *rs7100293,rs10128322*);
+- `SNPS_to_keep.txt`: a list of SNPs located in defined genomic regions;
+- 'DiGASCompleteResults.txt': For each DiGAS significant genomic region reports the generalized allele spectrum with respect to each phenotype category, fold change with respect to two phenotype  categies and the p-value.
+
+#### --out
+Name of the output file. Default `digastmp.txt`.
+
+
+
 ## Data
 
-To test DiGAS we used just genotyping and demographic data avaiable at ADNI(http://adni.loni.usc.edu) data portal.
+To test DiGAS we used just genotyping and demographic data avaiable at ADNI (http://adni.loni.usc.edu) data portal.
 
 
 ## Contributing
