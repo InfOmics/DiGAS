@@ -9,10 +9,14 @@ DiGAS is distributed as a command-line tool developed in Python and it is availa
 
 ## Installation and usage
 
-DiGAS can run on Windows or Unix system where Python 3 (or higher) was previously installed.  
-DiGAS depends on PLINK was previously installed , so we first need to install this package through the remotes package (in this way we can install a fixed version of Seurat). After Seurat installation, we can install Stardust from our GitHub repository. 
-Thus, the user will need Cython to be installed to correctly build GRAFIMO. Cython can be obtained via pip
+DiGAS can be easly downloaded from GitHub `src` directory (Windows or Unix version). PLINK tool is also contained in both directory.
 
+### System requirements
+
+DiGAS can run on Windows or Unix system where Python 3 (or higher) was previously installed.
+
+DiGAS depends on PLINK. PLINK executable must be contained in the same folder as the DiGAS executable.
+A PLINK version is contained in the `src` directory for both Windows and Unix versions. Alternatively you can download it from the official website: https://www.cog-genomics.org/plink/.
 
 DiGAS depends on a number of Python packages. To install all the required packages:
 
@@ -26,6 +30,8 @@ pip3 install shutil
 pip3 install re
 ```
 
+### Usage
+TO DO 
 ## Data
 
 To test DiGAS we used just genotyping and demographic data avaiable at ADNI(http://adni.loni.usc.edu) data portal.
