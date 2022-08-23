@@ -1,13 +1,10 @@
 # DiGAS
 
-A novel computational model for identifying genomic elements (from single exon to entire genomic regions)  that are linked to a given phenotypic condition (i.e. a disease), and that may be the cause of such a condition.
+A novel computational model for identifying genomic elements (from single exon to entire genomic regions)  that are linked to a given phenotypic condition (i.e. a disease) investigating for single nucleotide polymorphisms (SNP).
+
 Genomic elements are investigated by means of a newly introduced descriptor of genomic information, the generalized allele spectrum. In contrast to allele spectrum, the novel descriptor takes into account the complete set of SNPs of a region at once. Thus, frequency is computed at region level rather than at SNP level. Then, we introduce the differential generalized allele spectrum, which captures the differences in frequency allele spectra between healthy and ill sets (control and case respectively).
+
 Statistical significance of a gene is then evaluated by means of a differential analysis between the healthy and ill portions of the population.
-
-Here is showed a method illustration
-
-
-![Image](doc/method_illustration.PNG)
 
 
 ## Contents
