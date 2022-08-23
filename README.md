@@ -1,15 +1,8 @@
 # DiGAS
 
-A new methodology to prioritizes genes in relation to their capability of being biomarkers for a specific category, or for a group of two or more categories.
-
-## Overview
-
-Neurodegenerative diseases produce progressive loss of structure or function of neurons
-and their causes can be found in the brain at many different levels of neuronal circuitry, ranging from molecular to systemic. Alzheimer's disease and Parkinson's disease are among the most common types of neurodegeneration. Evidences of genetic factors have been found for both diseases, however, because of their complexity their genetic diagnosis and treatment are still open challenges.
-Alzheimer's disease is the most common cause of dementia. Nowadays, the classification for this disease is very challenging and have been presented 
-Different algorithms have been proposed for investigating the genetic causes of neurodegenerative diseases. Most of them use single data modality or deep learning (DL) to solve the problem. Here, using Alzheimer’s disease neuroimaging initiative (ADNI) dataset, 
-we presented a Differential generalized gene allele spectrum as descriptor of the genetic data together with a computational model that exploits it for recognizing affected individuals in genetic studies. 
-The model is able to predict, with high accuracy, the onset of Alzheimer's disease and Parkinson's disease using only single-nucleotide polymorphisms.
+A novel computational model for identifying genomic elements (from single exon to entire genomic regions)  that are linked to a given phenotypic condition (i.e. a disease), and that may be the cause of such a condition.
+Genomic elements are investigated by means of a newly introduced descriptor of genomic information, the generalized allele spectrum. In contrast to allele spectrum, the novel descriptor takes into account the complete set of SNPs of a region at once. Thus, frequency is computed at region level rather than at SNP level. Then, we introduce the differential generalized allele spectrum, which captures the differences in frequency allele spectra between healthy and ill sets (control and case respectively).
+Statistical significance of a gene is then evaluated by means of a differential analysis between the healthy and ill portions of the population.
 
 Here is showed a method illustration
 
