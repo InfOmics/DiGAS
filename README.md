@@ -55,6 +55,8 @@ Number of iterations to calculate p-value. Default 1000.
 Optional tab-separeted (txt) or comma-separated (csv) input file used to overwrite subjects phenotype from original fam. It accepts either numeric or categorical labels. 
 Only subjects in common between fam and pheno files are included in the analysis. DiGAS command-line tool prints the number of subjects excluded from the analysis.
 
+Examples of valid files are as follow:
+
 ```
 subject1  1  
 subject2  3
