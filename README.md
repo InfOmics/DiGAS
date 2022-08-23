@@ -46,7 +46,27 @@ or `--help` show the help message.
 Path of the PLINK binary files ***witouth extensions*** contained data to be analyzed. `bim`, `bed` and `fam` files are required.
 
 #### --region
-TO DO
+Tab-separated (txt) or comma-separated (csv) input files containing genomic position of genomic region to be analyzed in *chr:position* format.
+Name of the genomic region is not mandatory, while `start` and `end` genomic position are mandatory.
+
+
+```
+region1	1:154432419	1:154457855
+region2	2:160220164	2:160220337
+region3	3:14379478	3:14379480
+region4	4:3813929	4:3825268
+region5	5:1231231	5:1345235
+...
+```
+
+```
+1:154432419,1:154457855
+2:160220164,2:160220337
+3:14379478,3:14379480
+4:3813929,4:3825268
+5:1231231,5:1345235
+...
+```
 
 #### --iterations
 Number of iterations to calculate p-value. Default 1000.
@@ -55,7 +75,7 @@ Number of iterations to calculate p-value. Default 1000.
 Optional tab-separeted (txt) or comma-separated (csv) input file used to overwrite subjects phenotype from original fam. It accepts either numeric or categorical labels. 
 Only subjects in common between fam and pheno files are included in the analysis. DiGAS command-line tool prints the number of subjects excluded from the analysis.
 
-Examples of valid files are as follow:
+Examples of valid pheno files are as follow:
 
 ```
 subject1  1  
@@ -82,6 +102,7 @@ Save all intermediate file in a directory called as `--out` argument (or `digast
 - `SNPS_to_keep.txt`: a list of SNPs located in defined genomic regions;
 - 'DiGASCompleteResults.txt': For each DiGAS significant genomic region reports the generalized allele spectrum with respect to each phenotype category, fold change with respect to two phenotype categies and the p-value.
 
+
 #### --out
 Name of the output file. Default `digastmp.txt`.
 For each significant genomic region it shows name of the region, phenotype categories and respective p-values.
@@ -95,25 +116,23 @@ ill unkown region4 0.038
 ...
 ```
 
-
-
 ## Data
-
 To test DiGAS we used just genotyping and demographic data avaiable at ADNI (http://adni.loni.usc.edu) data portal.
+Any kind of PLINK binary format file can be used.
 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 Please make sure to update tests as appropriate.
 
 ## Support
-
 You can contact directly the authors by their e-mail addresses.
 
 ## Authors and acknowledgment
-
 Antonino Aparo (antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
+
+## Citation
+Sumbitted
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
