@@ -9,14 +9,15 @@ DiGAS is distributed as a command-line tool developed in Python and it is availa
 
 ## Installation and usage
 
-DiGAS can be easly downloaded from GitHub `src` directory (Windows or Unix version). PLINK tool is also contained in both directory.
+DiGAS can be easly downloaded from GitHub `src` directory (Windows or Unix version). A tested PLINK tool (version 1.9) is also contained in both directory in zip format, you have to extract it before running DiGAS.
 
 ### System requirements
 
 DiGAS can run on Windows or Unix system where Python 3 (or higher) was previously installed.
 
 DiGAS depends on PLINK. PLINK executable must be contained in the same folder as the DiGAS executable.
-A PLINK version is contained in the `src` directory for both Windows and Unix versions. Alternatively you can download it from the official website: https://www.cog-genomics.org/plink/.
+A compressed PLINK version is contained in the `src` directory for both Windows and Unix versions. 
+Alternatively you can download it from the official website: https://www.cog-genomics.org/plink/.
 
 DiGAS depends on a number of Python packages. To install all the required packages:
 
@@ -36,10 +37,6 @@ TO DO
 
 To test DiGAS we used just genotyping and demographic data avaiable at ADNI(http://adni.loni.usc.edu) data portal.
 
-## Usage
-
-The project was developed using python inside jupyter notebook. For the mapping of SNPs to a gene was used R that can be lunched inside the notebook as well. 
-
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -52,7 +49,7 @@ You can contact directly the authors by their e-mail addresses.
 
 ## Authors and acknowledgment
 
-Guglielmo Cerri (cerriguglielmo@gmail.com), Antonino Aparo(antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
+Antonino Aparo (antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
