@@ -32,7 +32,7 @@ pip3 install re
 ```
 
 ### Usage
-The script `digas.py` will run the DiGAS workflow.
+The script `digas.py` runs the DiGAS workflow.
 ```
 python digas.py [-h] --bfile BFILE --region REGION [--iterations [ITERATION]] [--pheno PHENO] [--saveIntermediate] [--out OUT]
 ```
@@ -46,7 +46,7 @@ or `--help` shows the help message.
 Path of the PLINK binary files ***without extensions*** contained data to be analyzed. `bim`, `bed` and `fam` files are required.
 
 #### --region
-Tab-separated (txt) or comma-separated (csv) input files containing genomic position of genomic region to be analyzed in *chr:position* format.
+Tab-separated (txt) or comma-separated (csv) input files containing genomic position of genomic regions to be analyzed in *chr:position* format.
 The name of the genomic region is not mandatory, while the *start* and *end* genomic positions are mandatory.
 
 
@@ -69,7 +69,7 @@ region5	5:1231231	5:1345235
 ```
 
 #### --iterations
-Number of iterations to calculate p-value. Default 1000.
+Number of iterations to calculate the p-value. Default 1000.
 
 #### --pheno
 Optional tab-separated (txt) or comma-separated (csv) input file used to overwrite subjects phenotype from original fam. It accepts either numeric or categorical labels. 
@@ -105,7 +105,7 @@ Save all intermediate files in a directory called as `--out` argument (or `digas
 
 #### --out
 Name of the output file. Default `digastmp.txt`.
-For each significant genomic region, it shows the name of the region, th phenotype categories and the respective p-values.
+For each significant genomic region, it shows the name of the region, the phenotype categories and the respective p-values.
 
 ```
 Cat1  Cat2  Gene  Pvalue
@@ -117,7 +117,7 @@ ill unkown region4 0.038
 ```
 
 ## Data
-To test DiGAS we used just genotyping and demographic data available at ADNI (http://adni.loni.usc.edu) data portal.
+To test DiGAS we used genotyping and demographic data available at ADNI (http://adni.loni.usc.edu) data portal.
 Any kind of PLINK binary format file can be used.
 
 
@@ -129,7 +129,7 @@ Please make sure to update tests as appropriate.
 You can contact directly the authors by their e-mail addresses.
 
 ## Authors and acknowledgement
-Antonino Aparo (antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@univr.it) created the workflow. 
+Antonino Aparo (antonino.aparo@univr.it) and Vincenzo Bonnici (vincenzo.bonnici@unipr.it) created the workflow. 
 
 ## Citation
 Submitted.
