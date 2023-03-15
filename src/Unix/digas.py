@@ -136,6 +136,7 @@ fam = pd.read_csv(os.path.join(os.getcwd(), (args.bfile + '.fam')), header=None,
 fam = fam.dropna()
 fam.rename(columns={0: 'FID', 1: 'subject', 5: 'status'}, inplace=True)
 print(str(fam.shape[0]) + " subject found in fam file")
+fam['subject'] = fam['subject'].astype(str)
 # print(fam)
 
 bim = pd.read_csv(os.path.join(os.getcwd(), (args.bfile + '.bim')), header=None, sep="\t")
